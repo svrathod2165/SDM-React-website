@@ -1,30 +1,43 @@
-import React, { useState, useEffect } from "react";
-// import { FaBars, FaTimes } from "react-icons/fa";
+import React from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 import "./Navbar.css";
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
-
   return (
     <>
-      <div className="container-fluid navbar"></div>
+      <div className="container-fluid">
+        <div className="navbar">
+          <div className="nav-logo">
+            <Link className="nav-logo-link" to="/">
+              Shiv
+              <br />
+              DreamHomes
+            </Link>
+          </div>
+          <div class="nav-menu">
+            <div className="nav-item">
+              <Link className="nav-logo-link" to="/properties">
+                Properties
+              </Link>
+            </div>
+            <div className="nav-item">
+              <Link className="nav-logo-link" to="/about">
+                About
+              </Link>
+            </div>
+            {/* <div className="nav-item">
+            <Link className="nav-logo-link" to="/sign-up">
+            Sign Up
+            </Link>
+          </div> */}
+          </div>
+          {/* button */}
+          <button type="button" class="btn btn-primary">
+            Primary
+          </button>
+        </div>
+      </div>
     </>
   );
 }
