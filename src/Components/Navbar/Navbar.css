@@ -1,7 +1,17 @@
 .navbar {
-  background: crimson;
+  padding: 10px;
+  background: yellow;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-content: center;
+  border-bottom: 1px solid lightgrey;
 }
+
+/* .nav-logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0.95;
+  text-align: left;
+} */

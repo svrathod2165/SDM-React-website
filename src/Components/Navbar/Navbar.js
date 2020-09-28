@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+// import { FaBars, FaTimes } from "react-icons/fa";
+import "./Navbar.css";
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
-const Navbar = () => {
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener("resize", showButton);
+
   return (
     <>
-      <div className="container-fluid navbar">
-        <div className="nav-logo">
-          Shiv
-          <br />
-          Dreamhomes
-        </div>
-      </div>
+      <div className="container-fluid navbar"></div>
     </>
   );
-};
+}
 
 export default Navbar;
