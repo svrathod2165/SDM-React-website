@@ -1,0 +1,21 @@
+.jumbotron-box {
+  background: crimson;
+  padding: 20px;
+}
+
+.jumbotron-title {
+  color: #1976d2;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .jumbotron-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
