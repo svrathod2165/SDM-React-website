@@ -1,10 +1,25 @@
 .jumbotron-box {
-  background: white;
+  background: linear-gradient(
+      45deg,
+      hsla(257, 69%, 30%, 1) 0%,
+      hsla(306, 100%, 46%, 0.3) 100%
+    ),
+    url("https://live.staticflickr.com/7501/27838170755_e58cfd7d2d_b.jpg");
   padding: 20px;
 }
 
+.center-container {
+  align-items: center;
+}
+
+.row-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .jumbotron-title {
-  color: #1976d2;
+  color: white;
   font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -15,41 +30,65 @@
 
 @media only screen and (max-width: 600px) {
   .jumbotron-title {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.5rem;
+    text-align: left;
   }
 }
 
 .jumbotron-subtitle {
-  font-size: 1.2rem;
-
+  font-size: 24px;
   color: white;
-  width: 100%;
+  font-weight: 600;
+  line-height: 1.2;
   padding: 15px 0px;
   text-align: left;
 }
 
 .call-now {
-  border-radius: 3em;
-  width: 300px;
-  margin: 15px 10px;
-  font-size: 18px;
+  display: block;
+  /* max-width: 300px; */
+  margin: 15px 0px;
+  font-size: 20px;
   align-self: center;
   background: crimson;
-  font-weight: 600;
+  font-weight: 800;
+  border-radius: 3px;
   letter-spacing: 1.2;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
   color: #fff;
   padding: 12px 20px;
 }
 
+.brokerge-row {
+  display: flex;
+  justify-content: center;
+}
+
 .no-brokerage,
 .free-of-cost {
-  border-radius: 3em;
+  border-radius: 3px;
+  margin-left: 15px;
+  margin-bottom: 15px;
   font-size: 18px;
   align-self: center;
-  background: #1976d2;
+  background: #fff;
   font-weight: 600;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
   letter-spacing: 1.2;
-  color: #fff;
+  color: #1976d2;
   padding: 12px 20px;
+}
+
+.column2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 865px) {
+  /* .jumbotron-title {
+  } */
+  .column2 {
+    display: flex;
+    justify-content: center;
+  }
 }
