@@ -5,6 +5,7 @@
       hsla(306, 100%, 46%, 0.3) 100%
     ),
     url("https://live.staticflickr.com/7501/27838170755_e58cfd7d2d_b.jpg");
+  background-size: cover;
   padding: 20px;
 }
 
@@ -61,7 +62,7 @@
 
 .brokerge-row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .no-brokerage,

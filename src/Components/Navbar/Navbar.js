@@ -27,7 +27,7 @@ function Navbar() {
               </Link>
             </div>
             <Link to="/sign-up">
-              <button type="button" class="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Primary
               </button>
             </Link>
