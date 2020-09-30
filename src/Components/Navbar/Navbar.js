@@ -26,16 +26,12 @@ function Navbar() {
                 About
               </Link>
             </div>
-            {/* <div className="nav-item">
-            <Link className="nav-logo-link" to="/sign-up">
-            Sign Up
+            <Link to="/sign-up">
+              <button type="button" class="btn btn-primary">
+                Primary
+              </button>
             </Link>
-          </div> */}
           </div>
-          {/* button */}
-          <button type="button" class="btn btn-primary">
-            Primary
-          </button>
         </div>
       </div>
     </>
