@@ -1,11 +1,13 @@
 import React from "react";
-import Jumbotron from "../../Components/Jumbotron/Jumbotron";
+import ProjectCard from "../../Components/Cards/ProjectCard";
+// import Jumbotron from "../../Components/Jumbotron/Jumbotron";
 import "./Home.css";
 
 function Home() {
   return (
     <>
-      <Jumbotron />
+      {/* <Jumbotron /> */}
+      <ProjectCard />
     </>
   );
 }

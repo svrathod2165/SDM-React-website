@@ -1,24 +1,21 @@
-.project-card{
-    height: 300px;
-    border-radius: 4px;
+.project-card {
+  height: 300px;
+  border-radius: 4px;
+  border: 1px solid red;
+  margin: 16px;
 }
 
 .project-img {
- 
 }
 
 .isbooking {
-
 }
 
-.project-title{
-
+.project-title {
 }
 
-.project-address{
-
+.project-address {
 }
 
-.project-description{
-    
+.project-description {
 }
